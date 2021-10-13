@@ -34,7 +34,7 @@ class Joystick:
 try:
   while 1:
     joystick = Joystick(0x48)
-    print(joystick.getX(), joystick.getY())
+    print('{:>3}, {:3}'.format(joystick.getX(), joystick.getY()))
     sleep(0.1)
 except KeyboardInterrupt:
   print('\nExiting')
